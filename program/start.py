@@ -56,8 +56,9 @@ async def _human_time_duration(seconds):
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_text(
-        f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
+    await message.reply_photo(
+        photo=f"{BOT_USERNAME}",,
+        caption=f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
 💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
 
 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !
