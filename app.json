@@ -57,7 +57,7 @@
             "value": "FA9SH"
         },
         "MONGODB_URL": {
-            "description": "ضع رابط mongodb لو م هتعرف تجيبو تع هنا @shadow49",
+            "description": "اتركه كما هوا",
             "required": true,
             "value": "mongodb://mongo:DZ2AUmIS4Gm7UzzAwy6u@containers-us-west-34.railway.app:7933"
         },
