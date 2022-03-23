@@ -48,7 +48,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "𓌹●↯‌•ʙᴏᴛ ѕʜᴀᴅᴏᴡ•↯●𓌺", url="https://t.me/USDDBOT?startgroup=true"
+                        "نصب بوتك من هنا", url="https://t.me/FA9SH/2059"
                     )
                 ],
             ]
