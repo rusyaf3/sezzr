@@ -5,6 +5,7 @@ from sys import version_info
 from time import time
 
 from config import (
+    BOT_PHOTO,
     ALIVE_IMG,
     ALIVE_NAME,
     BOT_NAME,
@@ -55,7 +56,7 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{BOT_USERNAME}",,
+        photo=f"{BOT_PHOTO}",,
         caption=f"""✨ **مرحبا عزيزي« {message.from_user.mention()} !**\n
 💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
 
