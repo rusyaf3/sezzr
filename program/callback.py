@@ -18,7 +18,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.answer("الصفحه الرئيسيه")
     await query.edit_message_text(
-        f"""✨ **مرحبا عزيزي ↤「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
+        f"""✨ **مرحبا عزيزي«「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
 💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
 
 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !
@@ -33,7 +33,7 @@ async def cbstart(_, query: CallbackQuery):
                         url=f"https://t.me/USDDBOT?startgroup=truehttps://t.me/USDDBOT?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ طريقة التفعيل", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 الاوامر", callback_data="cbcmds"),
                     InlineKeyboardButton("❤️ المطور", url=f"https://t.me/{OWNER_NAME}"),
@@ -48,7 +48,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "نصب بوتك من هنا", url="https://t.me/FA9SH/2059"
+                        "• نصب بوتك من هنا •", url="https://t.me/FA9SH/2059"
                     )
                 ],
             ]
