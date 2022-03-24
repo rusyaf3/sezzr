@@ -5,6 +5,7 @@ from pyrogram import Client, filters
 from program.utils.inline import menu_markup
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from config import (
+    BOT_PHOTO,
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
