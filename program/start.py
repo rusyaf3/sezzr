@@ -53,8 +53,8 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
-async def start_(client: Client, message: Message):
+@Client.on_message(filters.command("start") & filters.private & ~filters.edited)
+async def elkeatib(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
         caption=f"""✨ **مرحبا عزيزي« {message.from_user.mention()} !**\n
