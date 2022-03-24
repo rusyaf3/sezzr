@@ -66,6 +66,10 @@
             "required": true,
             "value": "usddshad"
         },
+        "BOT_PHOTO": {
+            "description": "ضع لينك صورة البوت",
+            "required": true
+        },
         "ALIVE_NAME": {
             "description": "ضع هنا اسم الحساب المساعد",
             "required": true,
