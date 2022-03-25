@@ -120,7 +120,7 @@ async def start(client: Client, message: Message):
   )
 
 @Client.on_message(command(["لمطور", "طور"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
+async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{DEV_PHOTO}",
         caption=f"""◍ الاول: هو مطور السورس \n◍ الثاني: هو مطور البوت\n√""",
@@ -131,7 +131,7 @@ async def start(client: Client, message: Message):
             ],
             [
                 InlineKeyboardButton(
-                    "DEV_NAME", url=f"https://t.me/{OWNER_NAME}"
+                    "{DEV_NAME}", url=f"https://t.me/{OWNER_NAME}"
                 ),
             ],
             [
