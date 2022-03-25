@@ -12,6 +12,8 @@ from config import (
     BOT_USERNAME,
     GROUP_SUPPORT,
     OWNER_NAME,
+    SUDO_USERS,
+    BOT_TOKEN,
     DEV_PHOTO,
     DEV_NAME,
     UPDATES_CHANNEL,
@@ -140,6 +142,14 @@ async def help(client: Client, message: Message):
          ]
      )
   )
+
+@Client.on_message(command(["لب التوكن", f"لب_التوكن"]) & filters.private & ~filters.edited)
+@sudo_users_only
+async def shadow(c: Client, message: Message):
+    start = time()
+    m_reply = await message.reply_text("انتظر من فضلك...")
+    delta_ping = time() - start
+    await m_reply.edit_text("**تم جلب التوكن**\n`{BOT_TOKEN}`")
 
 @Client.on_message(command(["ping", f"بينج"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
