@@ -94,7 +94,7 @@ async def start_(client: Client, message: Message):
         ),
         disable_web_page_preview=True,
     )
-
+)
 
 @Client.on_message(command(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
