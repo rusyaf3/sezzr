@@ -65,6 +65,14 @@
             "description": "ضع لينك صورة البوت من هنا @T_ELEGRAPH00BOT",
             "required": true
         },
+        "DEV_PHOTO": {
+            "description": "ضع لينك صورة حساب مطور البوت من هنا @T_ELEGRAPH00BOT",
+            "required": true
+        },
+        "DEV_NAME": {
+            "description": "ضع اسم حساب التليجرام الخاص بالمطور",
+            "required": true
+        },
         "ALIVE_NAME": {
             "description": "ضع هنا اسم الحساب المساعد",
             "required": true,
