@@ -149,8 +149,8 @@ async def help(client: Client, message: Message):
 async def shadow(c: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("انتظر من فضلك...")
-    delta_ping = time() - start
-    await m_reply.edit_text("**تم جلب التوكن**\n`{BOT_TOKEN}`")
+    BOT_TOKEN = time() - start
+    await m_reply.edit_text(f"**تم جلب التوكن**\n`{BOT_TOKEN}`")
 
 @Client.on_message(command(["ping", f"بينج"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
