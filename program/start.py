@@ -12,6 +12,8 @@ from config import (
     BOT_USERNAME,
     GROUP_SUPPORT,
     OWNER_NAME,
+    DEV_PHOTO,
+    DEV_NAME,
     UPDATES_CHANNEL,
 )
 from program import __version__
@@ -112,6 +114,28 @@ async def start(client: Client, message: Message):
             ],
             [
                 InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/USDDBOT?startgroup=true"),
+            ]
+         ]
+     )
+  )
+
+@Client.on_message(command(["المطور", "مطور"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"{DEV_PHOTO}",
+        caption=f"""◍ الاول: هو مطور السورس \n◍ الثاني: هو مطور البوت\n√""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("𓌹●↯‌𝑫𝑨𝑫 𝑺𝑯𝑨𝑫𝑶𝑾↯●𓌺", url=f"https://t.me/KB_Shadow"),
+            ],
+            [
+                InlineKeyboardButton(
+                    "DEV_NAME", url=f"https://t.me/{OWNER_NAME}"
+                ),
+            ],
+            [
+                InlineKeyboardButton("ضيـف البـوت لمجمـوعتـك ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
          ]
      )
