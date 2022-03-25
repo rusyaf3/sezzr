@@ -1,7 +1,7 @@
 {
     "name": "Video x Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
-    "logo": "https://telegra.ph/file/9bbaad0df871373c92dd1.jpg",
+    "logo": "https://telegra.ph/file/18b88af791e36bf3c4259.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -67,7 +67,7 @@
             "value": "usddshad"
         },
         "BOT_PHOTO": {
-            "description": "ضع لينك صورة البوت",
+            "description": "ضع لينك صورة البوت من هنا @T_ELEGRAPH00BOT",
             "required": true
         },
         "ALIVE_NAME": {
