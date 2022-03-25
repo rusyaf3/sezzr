@@ -21,6 +21,7 @@ from config import (
 from program import __version__
 from driver.veez import user
 from driver.filters import command, other_filters
+from driver.decorators import sudo_users_only
 from driver.database.dbchat import add_served_chat, is_served_chat
 from driver.database.dbpunish import is_gbanned_user
 from pyrogram import Client, filters, __version__ as pyrover
