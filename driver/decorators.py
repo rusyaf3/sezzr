@@ -5,7 +5,6 @@ from pyrogram import Client
 from pyrogram.types import Message, CallbackQuery
 from config import SUDO_USERS
 from driver.core import bot, me_bot
-from driver.core import get_me
 from driver.admins import get_administrators
 from driver.database.dblockchat import blacklisted_chats
 from driver.database.dbpunish import is_gbanned_user
