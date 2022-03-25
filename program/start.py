@@ -54,7 +54,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
-async def start_(client: Client, message: Message):
+async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
         caption=f"""✨ **مرحبا عزيزي« {message.from_user.mention()} !**\n
@@ -94,7 +94,7 @@ async def start_(client: Client, message: Message):
         ),
         disable_web_page_preview=True,
     )
-)
+
 
 @Client.on_message(command(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
