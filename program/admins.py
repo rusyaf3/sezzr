@@ -1,26 +1,21 @@
-import traceback
-
 from cache.admins import admins
-from config import BOT_USERNAME, IMG_5
-
-from driver.core import calls, me_user
+from driver.veez import call_py, bot
+from pyrogram import Client, filters
 from driver.design.thumbnail import thumb
 from driver.design.chatname import CHAT_TITLE
 from driver.queues import QUEUE, clear_queue
 from driver.filters import command, other_filters
-from driver.decorators import authorized_users_only, check_blacklist
-from driver.utils import skip_current_song, skip_item, remove_if_exists
-from driver.database.dbqueue import (
-    is_music_playing,
-    remove_active_chat,
-    music_off,
-    music_on,
+from driver.decorators import authorized_users_only
+from driver.utils import skip_current_song, skip_item
+from program.utils.inline import (
+    stream_markup,
+    close_mark,
+    back_mark,
 )
-
-from pyrogram import Client, filters
-from program.utils.inline import stream_markup, close_mark
+from config import BOT_USERNAME, GROUP_SUPPORT, IMG_5, UPDATES_CHANNEL
 from pyrogram.types import (
     CallbackQuery,
+    InlineKeyboardButton,
     InlineKeyboardMarkup,
     Message,
 )
