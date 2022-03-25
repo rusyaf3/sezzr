@@ -57,7 +57,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
-        caption=f"""✨ **مرحبا عزيزي» {message.from_user.mention()} !**\n
+        caption=f"""✨ **مرحبا عزيزي » {message.from_user.mention()} !**\n
 💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
 
 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !
