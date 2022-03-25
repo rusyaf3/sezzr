@@ -49,7 +49,7 @@ async def cbstart(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton(
                         "ضيـف البـوت لمجمـوعتـك ✅",
-                        url=f"https://t.me/USDDBOT?startgroup=truehttps://t.me/USDDBOT?startgroup=true"
+                        url=f"https://t.me/USDDBOT?startgroup=true"
                     )
                 ],
             ]
