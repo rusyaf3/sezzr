@@ -119,7 +119,7 @@ async def start(client: Client, message: Message):
      )
   )
 
-@Client.on_message(command(["المطور", "مطور"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["لمطور", "طور"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{DEV_PHOTO}",
