@@ -96,16 +96,13 @@ async def start_(client: Client, message: Message):
     )
 
 
-@Client.on_message(
-    command(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited
-)
-async def alive(client: Client, message: Message):
-    current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
-
-    keyboard = InlineKeyboardMarkup(
-        [
+@Client.on_message(commandpro(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/18b88af791e36bf3c4259.jpg",
+        caption=f"""ᴘʀᴏɢʀᴀᴍᴍᴇʀ [ѕʜᴀᴅᴏᴡ](https://t.me/KB_Shadow) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼""",
+        reply_markup=InlineKeyboardMarkup(
+         [
             [
                 InlineKeyboardButton("𓌹●↯‌•ᴅᴇᴠ ѕʜᴀᴅᴏᴡ•↯●𓌺", url=f"https://t.me/usddshad"),
             ],
@@ -117,16 +114,8 @@ async def alive(client: Client, message: Message):
             [
                 InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/USDDBOT?startgroup=true"),
             ]
-        ]
-    )
-
-    alive = f"ᴘʀᴏɢʀᴀᴍᴍᴇʀ [ѕʜᴀᴅᴏᴡ](https://t.me/KB_Shadow) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼"
-
-    await message.reply_photo(
-        photo=f"{ALIVE_IMG}",
-        caption=alive,
-        reply_markup=keyboard,
-    )
+         ]
+     )
 
 
 @Client.on_message(command(["ping", f"بينج"]) & ~filters.edited)
