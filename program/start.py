@@ -68,7 +68,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• نصب بوتك من هنا •", url="https://t.me/FA9SH/2059",
+                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/FA9SH/2059",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
@@ -103,7 +103,7 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓌹●↯‌•ᴅᴇᴠ ѕʜᴀᴅᴏᴡ•↯●𓌺", url=f"https://t.me/usddshad"),
+                InlineKeyboardButton("𓌹●↯‌𝑫𝑨𝑫 𝑺𝑯𝑨𝑫𝑶𝑾↯●𓌺", url=f"https://t.me/usddshad"),
             ],
             [
                 InlineKeyboardButton(
