@@ -116,7 +116,7 @@ async def start(client: Client, message: Message):
             ]
          ]
      )
-
+  )
 
 @Client.on_message(command(["ping", f"بينج"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
