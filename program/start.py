@@ -57,7 +57,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
-        caption=f"""✨ **مرحبا عزيزي« {message.from_user.mention()} !**\n
+        caption=f"""✨ **مرحبا عزيزي» {message.from_user.mention()} !**\n
 💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
 
 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !
@@ -68,8 +68,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕اضـف الـبـوت لـمـجـمـوعـتـك➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        "• نصب بوتك من هنا •", url="https://t.me/FA9SH/2059",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
@@ -87,7 +86,8 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• نصب بوتك من هنا •", url="https://t.me/FA9SH/2059"
+                        "ضيـف البـوت لمجمـوعتـك ✅",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
             ]
