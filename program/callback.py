@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
+# Copyright (C) 2022 By Shadow
 
 from driver.queues import QUEUE
 from pyrogram import Client, filters
@@ -30,7 +30,7 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "• نصب بوتك من هنا •", url="https://t.me/FA9SH/2059",
+                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/FA9SH/2059",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
