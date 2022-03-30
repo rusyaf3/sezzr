@@ -63,35 +63,38 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
         caption=f"""✨ **مرحبا عزيزي » {message.from_user.mention()} !**\n
-💭 **انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
-
-💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !
-
-🔖 لتعلم طريقة تشغيلي بمجموعتك اضغط علي » ❓طريقة التفعيل !
+ **🤖╖•انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**
+ **⚙️╢•  تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !**
+ **♻️╜ •لتعلم طريقة تشغيلي بمجموعتك اضغط علي » ❓طريقة التفعيل !**
+ 
+ 
+ **[• 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر](https://t.me/ttccss)**
+ 
+ **[• 𝙢𝙪𝙨𝙞𝙘 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧 🎷](https://t.me/RBBOU)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/FA9SH/2059",
+                        "لتنصيب بوت اغاني", url="https://t.me/RBBOU/26",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 الاوامر", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ المطور", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("♻️ الاوامر", callback_data="cbcmds"),
+                    InlineKeyboardButton("♻️ المطور", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "♻️ جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "𝙢𝙪𝙨𝙞𝙘 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧 🎷", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "ضيـف البـوت لمجمـوعتـك ✅",
+                        "ضيـف البـوت لمجمـوعتـك ♻️",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
@@ -103,34 +106,34 @@ async def start_(client: Client, message: Message):
 @Client.on_message(command(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/18b88af791e36bf3c4259.jpg",
-        caption=f"""ᴘʀᴏɢʀᴀᴍᴍᴇʀ [ѕʜᴀᴅᴏᴡ](https://t.me/KB_Shadow) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼""",
+        photo=f"https://telegra.ph/file/27ae29d282e91d72b244f.jpg",
+        caption=f"""👋╖•مرحبا بك في سورس ريبورتر\n🎧╢• سورس الاغاني الافضل في تيليجرام\n🎶╢ •السورس لتشغيل الاغاني في الكول\n🌐╢ •سيظهر لك مطور السورس و قنوات السورس\n🤖╜ • و اذا اردت تنصيب بوت مثل هذا قم بالتواصل معنا\n🤖╜ • و اذا اردت تنصيب بوت مثل هذا قم بالتواصل معنا\nالبوت يعمل بنجاح ✅""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓌹●↯‌𝑫𝑨𝑫 𝑺𝑯𝑨𝑫𝑶𝑾↯●𓌺", url=f"https://t.me/usddshad"),
+                InlineKeyboardButton("𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر", url=f"https://t.me/ttccss"),
             ],
             [
                 InlineKeyboardButton(
-                    "𝑬𝑹𝑹𝑶𝑹🖤", url=f"https://t.me/FA9SH"
+                    "𝙢𝙪𝙨𝙞𝙘 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧 🎷", url=f"https://t.me/RBBOU"
                 ),
             ],
             [
-                InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/USDDBOT?startgroup=true"),
+                InlineKeyboardButton("اضف البوت الى مجموعتك", url=f"https://t.me/asdsobot?startgroup=true"),
             ]
          ]
      )
   )
 
-@Client.on_message(command(["لمطور", "طور"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["لمطور", "مطور"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{DEV_PHOTO}",
-        caption=f"""◍ الاول: هو مطور السورس \n◍ الثاني: هو مطور البوت\n√""",
+        caption=f"""◍ مرحبا بك عزيزي\nمن الممكن ان تتواصل مع المطور و صحاب السورس""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓌹●↯‌𝑫𝑨𝑫 𝑺𝑯𝑨𝑫𝑶𝑾↯●𓌺", url=f"https://t.me/KB_Shadow"),
+                InlineKeyboardButton("𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر", url=f"https://t.me/ttccss"),
             ],
             [
                 InlineKeyboardButton(
@@ -144,9 +147,9 @@ async def help(client: Client, message: Message):
      )
   )
 
-@Client.on_message(command(["لب التوكن", f"لب_التوكن", "hadow"]) & filters.private & ~filters.edited)
+@Client.on_message(command(["جلب التوكن", f"جلب_التوكن", "ezr"]) & filters.private & ~filters.edited)
 @sudo_users_only
-async def shadow(c: Client, message: Message):
+async def sezr(c: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("انتظر من فضلك...")
     BOT_TOKEN = time() - start
@@ -200,7 +203,7 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("𝙢𝙪𝙨𝙞𝙘 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧 🎷", url=f"https://t.me/{UPDATES_CHANNEL}"),
                             InlineKeyboardButton("💭 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
@@ -209,8 +212,8 @@ async def new_chat(c: Client, m: Message):
                         ],
                         [
                             InlineKeyboardButton(
-                        "♡اضـف الـبـوت لـمـجـمـوعـتـك♡",
-                        url=f'https://t.me/USDDBOT?startgroup=true'),
+                        "اضـف الـبـوت لـمـجـمـوعـتـك",
+                        url=f''),
                         ],
                     ]
                 )
@@ -234,4 +237,5 @@ async def chat_watcher_func(_, message: Message):
         await message.reply_text(
             f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n🚫 **Reason:** potential spammer and abuser."
         )
+
 
